@@ -36,7 +36,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.speed = new System.Windows.Forms.TextBox();
             this.sysName = new System.Windows.Forms.TextBox();
-            this.start = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -70,10 +69,18 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.HashTestTime = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.ImageTestStart = new System.Windows.Forms.Button();
+            this.label27 = new System.Windows.Forms.Label();
+            this.ImageTestTime = new System.Windows.Forms.TextBox();
+            this.CompressTestStart = new System.Windows.Forms.Button();
+            this.label26 = new System.Windows.Forms.Label();
+            this.CompressTestTime = new System.Windows.Forms.TextBox();
+            this.CriptTestStart = new System.Windows.Forms.Button();
+            this.label25 = new System.Windows.Forms.Label();
+            this.CriptTestTime = new System.Windows.Forms.TextBox();
             this.hashTestStart = new System.Windows.Forms.Button();
-            this.hashTestStop = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.HashTestTime = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -142,16 +149,6 @@
             this.sysName.Size = new System.Drawing.Size(329, 20);
             this.sysName.TabIndex = 9;
             // 
-            // start
-            // 
-            this.start.Location = new System.Drawing.Point(298, 345);
-            this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(145, 23);
-            this.start.TabIndex = 10;
-            this.start.Text = "Получить параметры";
-            this.start.UseVisualStyleBackColor = true;
-            this.start.Click += new System.EventHandler(this.start_Click);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -218,7 +215,6 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.name);
-            this.groupBox2.Controls.Add(this.start);
             this.groupBox2.Controls.Add(this.Manufacturer);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label2);
@@ -259,7 +255,7 @@
             this.groupBox2.Controls.Add(this.label20);
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(459, 383);
+            this.groupBox2.Size = new System.Drawing.Size(459, 354);
             this.groupBox2.TabIndex = 30;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Параметры ЦП";
@@ -458,23 +454,112 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.hashTestStop);
+            this.groupBox1.Controls.Add(this.ImageTestStart);
+            this.groupBox1.Controls.Add(this.label27);
+            this.groupBox1.Controls.Add(this.ImageTestTime);
+            this.groupBox1.Controls.Add(this.CompressTestStart);
+            this.groupBox1.Controls.Add(this.label26);
+            this.groupBox1.Controls.Add(this.CompressTestTime);
+            this.groupBox1.Controls.Add(this.CriptTestStart);
+            this.groupBox1.Controls.Add(this.label25);
+            this.groupBox1.Controls.Add(this.CriptTestTime);
             this.groupBox1.Controls.Add(this.hashTestStart);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.HashTestTime);
             this.groupBox1.Location = new System.Drawing.Point(478, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(378, 382);
+            this.groupBox1.Size = new System.Drawing.Size(379, 353);
             this.groupBox1.TabIndex = 31;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Тестирование ЦП";
             // 
-            // HashTestTime
+            // ImageTestStart
             // 
-            this.HashTestTime.Location = new System.Drawing.Point(97, 28);
-            this.HashTestTime.Name = "HashTestTime";
-            this.HashTestTime.Size = new System.Drawing.Size(104, 20);
-            this.HashTestTime.TabIndex = 30;
+            this.ImageTestStart.Location = new System.Drawing.Point(226, 103);
+            this.ImageTestStart.Name = "ImageTestStart";
+            this.ImageTestStart.Size = new System.Drawing.Size(75, 23);
+            this.ImageTestStart.TabIndex = 41;
+            this.ImageTestStart.Text = "Запустить";
+            this.ImageTestStart.UseVisualStyleBackColor = true;
+            this.ImageTestStart.Click += new System.EventHandler(this.ImageTestStart_Click);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(6, 108);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(90, 13);
+            this.label27.TabIndex = 40;
+            this.label27.Text = "Тест CPU image:";
+            // 
+            // ImageTestTime
+            // 
+            this.ImageTestTime.Location = new System.Drawing.Point(116, 105);
+            this.ImageTestTime.Name = "ImageTestTime";
+            this.ImageTestTime.Size = new System.Drawing.Size(104, 20);
+            this.ImageTestTime.TabIndex = 39;
+            // 
+            // CompressTestStart
+            // 
+            this.CompressTestStart.Location = new System.Drawing.Point(226, 78);
+            this.CompressTestStart.Name = "CompressTestStart";
+            this.CompressTestStart.Size = new System.Drawing.Size(75, 23);
+            this.CompressTestStart.TabIndex = 38;
+            this.CompressTestStart.Text = "Запустить";
+            this.CompressTestStart.UseVisualStyleBackColor = true;
+            this.CompressTestStart.Click += new System.EventHandler(this.CompressTestStart_Click);
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(6, 83);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(107, 13);
+            this.label26.TabIndex = 37;
+            this.label26.Text = "Тест CPU compress:";
+            // 
+            // CompressTestTime
+            // 
+            this.CompressTestTime.Location = new System.Drawing.Point(116, 80);
+            this.CompressTestTime.Name = "CompressTestTime";
+            this.CompressTestTime.Size = new System.Drawing.Size(104, 20);
+            this.CompressTestTime.TabIndex = 36;
+            // 
+            // CriptTestStart
+            // 
+            this.CriptTestStart.Location = new System.Drawing.Point(226, 52);
+            this.CriptTestStart.Name = "CriptTestStart";
+            this.CriptTestStart.Size = new System.Drawing.Size(75, 23);
+            this.CriptTestStart.TabIndex = 35;
+            this.CriptTestStart.Text = "Запустить";
+            this.CriptTestStart.UseVisualStyleBackColor = true;
+            this.CriptTestStart.Click += new System.EventHandler(this.CriptTestStart_Click);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(6, 57);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(82, 13);
+            this.label25.TabIndex = 34;
+            this.label25.Text = "Тест CPU cript:";
+            // 
+            // CriptTestTime
+            // 
+            this.CriptTestTime.Location = new System.Drawing.Point(116, 54);
+            this.CriptTestTime.Name = "CriptTestTime";
+            this.CriptTestTime.Size = new System.Drawing.Size(104, 20);
+            this.CriptTestTime.TabIndex = 33;
+            // 
+            // hashTestStart
+            // 
+            this.hashTestStart.Location = new System.Drawing.Point(226, 26);
+            this.hashTestStart.Name = "hashTestStart";
+            this.hashTestStart.Size = new System.Drawing.Size(75, 23);
+            this.hashTestStart.TabIndex = 32;
+            this.hashTestStart.Text = "Запустить";
+            this.hashTestStart.UseVisualStyleBackColor = true;
+            this.hashTestStart.Click += new System.EventHandler(this.hashTestStart_Click);
             // 
             // label1
             // 
@@ -485,31 +570,18 @@
             this.label1.TabIndex = 31;
             this.label1.Text = "Тест CPU hash:";
             // 
-            // hashTestStart
+            // HashTestTime
             // 
-            this.hashTestStart.Location = new System.Drawing.Point(207, 26);
-            this.hashTestStart.Name = "hashTestStart";
-            this.hashTestStart.Size = new System.Drawing.Size(75, 23);
-            this.hashTestStart.TabIndex = 32;
-            this.hashTestStart.Text = "Запустить";
-            this.hashTestStart.UseVisualStyleBackColor = true;
-            this.hashTestStart.Click += new System.EventHandler(this.hashTestStart_Click);
-            // 
-            // hashTestStop
-            // 
-            this.hashTestStop.Location = new System.Drawing.Point(288, 26);
-            this.hashTestStop.Name = "hashTestStop";
-            this.hashTestStop.Size = new System.Drawing.Size(75, 23);
-            this.hashTestStop.TabIndex = 33;
-            this.hashTestStop.Text = "Остановить";
-            this.hashTestStop.UseVisualStyleBackColor = true;
-            this.hashTestStop.Click += new System.EventHandler(this.hashTestStop_Click);
+            this.HashTestTime.Location = new System.Drawing.Point(116, 28);
+            this.HashTestTime.Name = "HashTestTime";
+            this.HashTestTime.Size = new System.Drawing.Size(104, 20);
+            this.HashTestTime.TabIndex = 30;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(869, 407);
+            this.ClientSize = new System.Drawing.Size(869, 378);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Name = "Form1";
@@ -532,7 +604,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox speed;
         private System.Windows.Forms.TextBox sysName;
-        private System.Windows.Forms.Button start;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
@@ -569,7 +640,15 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox HashTestTime;
         private System.Windows.Forms.Button hashTestStart;
-        private System.Windows.Forms.Button hashTestStop;
+        private System.Windows.Forms.Button CriptTestStart;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox CriptTestTime;
+        private System.Windows.Forms.Button CompressTestStart;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox CompressTestTime;
+        private System.Windows.Forms.Button ImageTestStart;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox ImageTestTime;
     }
 }
 

@@ -13,19 +13,15 @@ namespace TestCPU
 {
     public partial class Form1 : Form
     {
-        Form2 form2 = new Form2();
         Tests test = new Tests();
 
         public Form1()
         {
             InitializeComponent();
-        }
 
-        // Запрос на получение информации о ЦП
-        ManagementObjectSearcher searcher = new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM Win32_Processor");
+            // Запрос на получение информации о ЦП
+            ManagementObjectSearcher searcher = new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM Win32_Processor");
 
-        private void start_Click(object sender, EventArgs e)
-        {
             // Вывод информации о ЦП в форму
             foreach (ManagementObject queryObj in searcher.Get())
             {
@@ -46,17 +42,34 @@ namespace TestCPU
 
         private void hashTestStart_Click(object sender, EventArgs e)
         {
-            string time = test.HashTest();
-            HashTestTime.Text = time;
-
             // Здесь должен быть запуск замеров
 
-            form2.Show();
+            string time = test.HashTest();
+            HashTestTime.Text = time;
         }
 
-        private void hashTestStop_Click(object sender, EventArgs e)
+        private void CriptTestStart_Click(object sender, EventArgs e)
         {
-            // Можно добавить остановку теста 
+            // Здесь должен быть запуск замеров
+
+            string time = test.CriptTest();
+            CriptTestTime.Text = time;
+        }
+
+        private void CompressTestStart_Click(object sender, EventArgs e)
+        {
+            // Здесь должен быть запуск замеров
+
+            string time = test.CompressTest();
+            CompressTestTime.Text = time;
+        }
+
+        private void ImageTestStart_Click(object sender, EventArgs e)
+        {
+            // Здесь должен быть запуск замеров
+
+            string time = test.ImageTest();
+            ImageTestTime.Text = time;
         }
     }
 }

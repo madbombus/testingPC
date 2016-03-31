@@ -15,6 +15,5 @@ C:\Users\EO\Desktop\Основы эксплуатации\ЛР 2\Репозит�
 C:\Users\EO\Desktop\Основы эксплуатации\ЛР 2\Репозиторий\testingPC\TestCPU\bin\Debug\TestCPU.pdb
 C:\Users\EO\Desktop\Основы эксплуатации\ЛР 2\Репозиторий\testingPC\TestCPU\obj\Debug\TestCPU.csprojResolveAssemblyReference.cache
 C:\Users\EO\Desktop\Основы эксплуатации\ЛР 2\Репозиторий\testingPC\TestCPU\obj\Debug\TestCPU.Form1.resources
-C:\Users\EO\Desktop\Основы эксплуатации\ЛР 2\Репозиторий\testingPC\TestCPU\obj\Debug\TestCPU.Form2.resources
 C:\Users\EO\Desktop\Основы эксплуатации\ЛР 2\Репозиторий\testingPC\TestCPU\obj\Debug\TestCPU.Properties.Resources.resources
 C:\Users\EO\Desktop\Основы эксплуатации\ЛР 2\Репозиторий\testingPC\TestCPU\obj\Debug\TestCPU.csproj.GenerateResource.Cache

@@ -34,10 +34,17 @@ namespace TestCPU
             }
         }
 
+        // Функция измерения текущей загрузки ЦП
         public double getLoad()
         {
-            // Здесь будет код
-            return 0;
+            ManagementObjectSearcher searcher = new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM Win32_Processor");
+
+            int curLoad = 0;
+            foreach (ManagementObject queryObj in searcher.Get())
+            {
+                //curLoad = System.Convert.ToInt32(queryObj["LoadPercentage"]); // У меня эта строчка не работает
+            }
+            return curLoad;
         }
 
         // Также тут будет отрисовка графика
