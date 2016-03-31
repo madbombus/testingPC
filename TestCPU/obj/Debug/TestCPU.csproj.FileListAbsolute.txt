@@ -8,3 +8,13 @@ c:\users\admin\documents\visual studio 2012\Projects\TestCPU\TestCPU\obj\Debug\T
 c:\users\admin\documents\visual studio 2012\Projects\TestCPU\TestCPU\obj\Debug\TestCPU.pdb
 C:\Users\admin\documents\visual studio 2012\Projects\TestCPU\TestCPU\obj\Debug\TestCPU.Form2.resources
 C:\Users\admin\documents\visual studio 2012\Projects\TestCPU\TestCPU\obj\Debug\TestCPU.csprojResolveAssemblyReference.cache
+C:\Users\EO\Desktop\Основы эксплуатации\ЛР 2\Репозиторий\testingPC\TestCPU\bin\Debug\TestCPU.exe.config
+C:\Users\EO\Desktop\Основы эксплуатации\ЛР 2\Репозиторий\testingPC\TestCPU\obj\Debug\TestCPU.exe
+C:\Users\EO\Desktop\Основы эксплуатации\ЛР 2\Репозиторий\testingPC\TestCPU\obj\Debug\TestCPU.pdb
+C:\Users\EO\Desktop\Основы эксплуатации\ЛР 2\Репозиторий\testingPC\TestCPU\bin\Debug\TestCPU.exe
+C:\Users\EO\Desktop\Основы эксплуатации\ЛР 2\Репозиторий\testingPC\TestCPU\bin\Debug\TestCPU.pdb
+C:\Users\EO\Desktop\Основы эксплуатации\ЛР 2\Репозиторий\testingPC\TestCPU\obj\Debug\TestCPU.csprojResolveAssemblyReference.cache
+C:\Users\EO\Desktop\Основы эксплуатации\ЛР 2\Репозиторий\testingPC\TestCPU\obj\Debug\TestCPU.Form1.resources
+C:\Users\EO\Desktop\Основы эксплуатации\ЛР 2\Репозиторий\testingPC\TestCPU\obj\Debug\TestCPU.Form2.resources
+C:\Users\EO\Desktop\Основы эксплуатации\ЛР 2\Репозиторий\testingPC\TestCPU\obj\Debug\TestCPU.Properties.Resources.resources
+C:\Users\EO\Desktop\Основы эксплуатации\ЛР 2\Репозиторий\testingPC\TestCPU\obj\Debug\TestCPU.csproj.GenerateResource.Cache
