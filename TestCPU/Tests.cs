@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using System.Security;
 using System.Security.Cryptography;
 using System.Diagnostics;
+using System.IO;
+using ICSharpCode.SharpZipLib.Zip;
+
 
 namespace TestCPU
 {
@@ -41,8 +44,20 @@ namespace TestCPU
         // Тест архивирования 
         public string CompressTest()
         {
-            // Здесь будет код
-            return "0";
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+            
+            
+            string startPath = @"c:\example\start";
+            FastZip zip = new FastZip();
+            zip.CreateZip("my.zip", "toZip", true, null);
+
+
+            stopWatch.Stop();
+            TimeSpan ts = stopWatch.Elapsed;
+            string elapsedTime = String.Format("{0:00}:{1:00}", ts.Minutes, ts.Seconds);
+
+            return elapsedTime;
         }
 
         // Тест обработки изображения 
